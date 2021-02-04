@@ -1,0 +1,69 @@
+{
+    "name": "drupalchamp/crypto_distribution_project",
+    "description": "Project creator for Crypto Distribution.",
+    "type": "composer-plugin",
+    "license": "GPL-2.0-or-later",
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        "assets": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "process-timeout": 0
+    },
+    "require": {
+        "composer/installers": "^1.9",
+        "cweagans/composer-patches": "~1",
+        "drupal/core-composer-scaffold": "^9.1",
+        "drush/drush": "^10",
+        "oomphinc/composer-installers-extender": "^1.1",
+        "drupalchamp/crypto_distribution": "^1.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "quick-start": [
+            "composer install",
+            "php docroot/core/scripts/drupal quick-start crypto_distribution"
+        ]
+    },
+    "extra": {
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "./"
+            }
+        },
+        "installer-paths": {
+            "core": [
+                "type:drupal-core"
+            ],
+            "modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/Commands/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
+            "modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "themes/custom/{$name}": [
+                "type:drupal-custom-theme"
+            ],
+            "libraries/{$name}": [
+                "type:drupal-library"
+            ]
+        }
+    }
+}
