@@ -24,7 +24,7 @@
         "drupal/core-recommended": "^9",
         "drush/drush": "^10",
         "oomphinc/composer-installers-extender": "^1.1",
-        "drupalchamp/crypto_distribution": "^1.0"
+        "drupalchamp/crypto_distribution": "^2.x-dev"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
