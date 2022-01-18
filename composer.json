@@ -19,10 +19,8 @@
     },
     "require": {
         "composer/installers": "^1.9",
-        "cweagans/composer-patches": "~1",
         "drupal/core-composer-scaffold": "^9.1",
-        "drush/drush": "^10",
-        "oomphinc/composer-installers-extender": "^1.1",
+        "oomphinc/composer-installers-extender": "^2.0",
         "drupalchamp/crypto_distribution": "^1.0"
     },
     "minimum-stability": "dev",
