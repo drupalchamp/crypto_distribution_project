@@ -21,7 +21,7 @@
         "composer/installers": "^1.9",
         "drupal/core-composer-scaffold": "^9.1",
         "oomphinc/composer-installers-extender": "^2.0",
-        "drupalchamp/crypto_distribution": "^1.0"
+        "drupalchamp/crypto_distribution": "^6.0.4"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
